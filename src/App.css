@@ -1,0 +1,236 @@
+.form-container {
+  width: 900px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.form {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+h1 {
+  font-size: 54px;
+  text-align: center;
+  color: #232742;
+}
+
+.subheader {
+  text-align: left;
+  width: 90%;
+  font-size: 16px;
+  margin: -15px 0 30px 50px;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.form-list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.form-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  align-self: start;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  color: #232742;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 80%;
+  padding: 20px 0;
+  border: 1px solid #232742;
+}
+
+.error-field {
+  width: 80%;
+  padding: 20px 0;
+  border: 1px solid red;
+}
+
+.form-input::placeholder,
+.form-input:focus,
+.form-input:not(:placeholder-shown) {
+  padding-left: 20px;
+}
+
+.error-field::placeholder,
+.error-field:focus,
+.error-field:not(:placeholder-shown) {
+  padding-left: 20px;
+}
+
+.btn {
+  width: 80%;
+  padding: 25px 0;
+  border: none;
+  border-radius: 10px;
+  background: #232742;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  /* letter-spacing: 2px; */
+}
+
+.success-message-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.message {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.message-icon {
+  margin-top: 40px;
+}
+.message-header {
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.message-text {
+  font-size: 12px;
+}
+
+.email-style {
+  color: #232742;
+  font-weight: 600;
+}
+
+.btn-message {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  background: #232742;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-message:active {
+  background: #ff5574;
+  color: #fff;
+  box-shadow: 0 5px 10px 2px rgba(255, 87, 118, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+
+  .form-container {
+    height: 80%;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .form-image {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    transform: translateY(-45%);
+  }
+
+  .form {
+    position: relative;
+    top: 10%;
+  }
+
+  h1 {
+    font-size: 48px;
+    align-self: start;
+    margin-left: 30px;
+  }
+
+  .subheader {
+    text-align: left;
+    width: 85%;
+    font-size: 14px;
+    margin: -15px 0 30px 20px;
+  }
+
+  .form-list {
+    /* width: 95%; */
+    margin: 0 10px 20px 10px;
+  }
+
+  label {
+    margin-left: 30px;
+  }
+
+  input,
+  .btn {
+    width: 90%;
+  }
+
+  .success-message-container {
+    height: 100%;
+  }
+
+  .message-icon {
+    margin-top: 150px;
+  }
+
+  .message-header {
+    position: absolute;
+    left: 0;
+    font-size: 48px;
+  }
+
+  .message-text {
+    position: relative;
+    top: 150px;
+    left: 0;
+    font-size: 18px;
+  }
+
+  .btn-message {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
